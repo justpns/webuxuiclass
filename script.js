@@ -175,6 +175,57 @@ const slides = [
       "Explain that UI is visible and easy to comment on, but UX is where the user either succeeds or stalls."
   },
   {
+    type: "section",
+    section: "Mini Case Study",
+    eyebrow: "Real Websites",
+    title: "UX is not the same as UI",
+    subtitle: "Compare live websites to separate usefulness from visual style.",
+    notes:
+      "Use this as a short reality check. Students should see that visual polish and usability do not always rise or fall together."
+  },
+  {
+    type: "cards",
+    section: "Mini Case Study",
+    eyebrow: "Good UX + Good UI",
+    title: "Apple and GOV.UK solve clarity in different ways",
+    cards: [
+      ["Apple", "Strong visual hierarchy, clear CTA flow, premium presentation, and a controlled scanning path."],
+      ["Why it works", "The interface looks polished, but the real strength is that the page still tells users what matters first."],
+      ["GOV.UK", "Plain visual style, direct language, strong search, and service-first navigation."],
+      ["Why it works too", "It proves strong UX does not require visual drama when the structure is task-focused and obvious."]
+    ],
+    notes:
+      "Contrast Apple and GOV.UK on purpose. One is visually premium, the other is visually plain, but both guide users effectively."
+  },
+  {
+    type: "cards",
+    section: "Mini Case Study",
+    eyebrow: "Bad UI, Good UX",
+    title: "Craigslist is ugly, but still useful",
+    cards: [
+      ["Weak UI", "Outdated typography, minimal visual polish, and almost no premium styling."],
+      ["Strong utility", "Users can scan categories quickly, browse fast, and complete common tasks with low friction."],
+      ["Why users stay", "Repeat users care more about speed and familiarity than visual beauty."],
+      ["Lesson", "An interface can look bad and still perform well if the path to action stays obvious."]
+    ],
+    notes:
+      "This is the example that usually breaks students' assumptions. Ugly does not automatically mean unusable."
+  },
+  {
+    type: "cards",
+    section: "Mini Case Study",
+    eyebrow: "Bad UX + Bad UI",
+    title: "Berkshire Hathaway shows when both layers fail",
+    cards: [
+      ["Weak hierarchy", "The page gives little help with attention order or first-time understanding."],
+      ["Weak UI", "The layout feels outdated and visually dense, with minimal support for scanning."],
+      ["Weak UX", "Users must work harder to interpret the page, identify priorities, and know where to go next."],
+      ["Lesson", "If clarity, guidance, and visual communication all break down together, the experience feels harder than it should."]
+    ],
+    notes:
+      "Use this to show that a list of links is not the same thing as a usable information experience."
+  },
+  {
     type: "statement",
     section: "Modern UX Mindset",
     eyebrow: "5-Second Test",
@@ -931,6 +982,90 @@ const slides = [
       "Keep the critique efficient. Prioritize the highest-leverage problems instead of line-by-line commentary."
   },
   {
+    type: "statement",
+    section: "Applied Case Study",
+    eyebrow: "Next Step",
+    title: "Now apply these UX principles to a real service website brief.",
+    copy:
+      "The challenge is not to design everything. The challenge is to simplify what matters most for users who need help quickly.",
+    notes:
+      "Use this as the bridge from critique theory into the assignment. It should feel like the natural practical application of Day 1."
+  },
+  {
+    type: "hero",
+    section: "Applied Case Study",
+    eyebrow: "Class Assignment",
+    title: "Quitline 1600 Website Redesign",
+    subtitle: "Mobile-first UX workshop",
+    lede: "Turn a complex public-service brief into a clear website concept that helps users understand the service and choose the right action quickly.",
+    pills: ["UX side", "Mobile-first", "Case study", "Day 1"],
+    notes:
+      "Set the tone: this is a realistic service-access problem, not a marketing landing page exercise. Day 1 focuses on the UX foundation."
+  },
+  {
+    type: "list",
+    section: "Applied Case Study",
+    eyebrow: "Project Framing",
+    title: "Reduce the brief to the user-facing experience",
+    items: [
+      "Do not build the full platform, CMS, dashboard, or PDPA system.",
+      "Focus on homepage clarity, service access, and mobile usability.",
+      "Make the main support pathways obvious within one to two steps.",
+      "Use the brief as a UX/UI case study, not as a production promise."
+    ],
+    notes:
+      "This slide gives students permission to narrow the scope before they start designing."
+  },
+  {
+    type: "cards",
+    section: "Applied Case Study",
+    eyebrow: "Core Actions",
+    title: "The website should make these actions obvious",
+    cards: [
+      ["Call 1600", "Direct support for users ready to speak with a real person now."],
+      ["Add LINE OA", "A familiar and lower-friction channel for continued support."],
+      ["Talk to QuitBot", "Immediate guidance for users outside service hours or not ready to call."],
+      ["Start assessment", "A simple entry point for readiness, screening, or the next step."]
+    ],
+    notes:
+      "Anchor the project in action pathways so students do not drift into organization-first content."
+  },
+  {
+    type: "cards",
+    section: "Applied Case Study",
+    eyebrow: "UX Side",
+    title: "What the UX team should solve",
+    cards: [
+      ["Structure", "Decide what users must see first and what belongs on the homepage versus secondary pages."],
+      ["Flow", "Map one short path from landing to support with fewer decisions and less hesitation."],
+      ["Output", "Create a problem summary, target users, sitemap, and one key user journey."],
+      ["Wireframes", "Sketch mobile-first wireframes with a clear hero, main CTA, and logical section order."]
+    ],
+    notes:
+      "Push students to remove noise instead of preserving every requirement from the original brief."
+  },
+  {
+    type: "workshop",
+    section: "Applied Case Study",
+    eyebrow: "Deliverables",
+    title: "What each team submits",
+    copy:
+      "Submit a UX summary, simplified sitemap, user journey, and mobile-first wireframes that clearly show the path to support.",
+    timer: "Workshop output",
+    notes:
+      "The UI execution continues in Day 2. Day 1 should end with a strong structural direction."
+  },
+  {
+    type: "statement",
+    section: "Applied Case Study",
+    eyebrow: "Final Brief",
+    title: "Do not design everything. Design what matters most.",
+    copy:
+      "Redesign the Quitline 1600 website as a mobile-first UX concept that helps users quickly understand the service and choose the right support pathway with minimal confusion.",
+    notes:
+      "End the assignment block by reinforcing focus and prioritization."
+  },
+  {
     type: "section",
     section: "AI Prompt Library",
     eyebrow: "Prompt Library",
@@ -1064,25 +1199,25 @@ const slides = [
   {
     type: "cards",
     section: "Reflection",
-    eyebrow: "Deliverables",
-    title: "By the end of Day 1, students should have",
+    eyebrow: "Carry Forward",
+    title: "Take these into Day 2",
     cards: [
-      ["Persona", "One practical target user profile."],
-      ["Sitemap", "A simplified content and navigation structure."],
-      ["User flow", "A short conversion path with CTA logic."],
-      ["Mobile wireframe", "A low-fidelity homepage layout."],
-      ["Critique notes", "Actionable feedback for refinement."]
+      ["Clear user priorities", "Know what users must understand, trust, and do first."],
+      ["Simplified structure", "Keep only the sections and navigation that support the main goal."],
+      ["Stronger flow", "Use a short path with one obvious primary action."],
+      ["Wireframe direction", "Bring a cleaner mobile-first layout into UI work."],
+      ["Critique mindset", "Keep asking what is clear, confusing, or removable."]
     ],
     notes:
-      "This is the checklist students should compare their progress against before leaving."
+      "This avoids repeating the assignment deliverables while still giving students a practical handoff into Day 2."
   },
   {
     type: "workshop",
     section: "Reflection",
     eyebrow: "Homework",
-    title: "Refine the wireframe using feedback and AI critique.",
+    title: "Refine your Quitline concept using feedback and AI critique.",
     copy:
-      "Prepare a cleaner version for Day 2, where visual hierarchy and interface design take over.",
+      "Prepare a cleaner homepage wireframe and stronger section hierarchy for Day 2, where visual hierarchy and interface design take over.",
     timer: "Post-class task",
     notes:
       "Tell students the homework is not to add decoration. The goal is to sharpen clarity before UI work."

@@ -678,6 +678,54 @@ const slides = [
   },
   {
     type: "section",
+    section: "Applied Case Study",
+    eyebrow: "Case Study Handoff",
+    title: "Quitline 1600 UI workshop",
+    subtitle: "Day 2 turns the Day 1 UX structure into a visual interface system."
+  },
+  {
+    type: "statement",
+    section: "Applied Case Study",
+    eyebrow: "Day 2 Focus",
+    title: "The UX structure is already defined. Now the UI must guide attention.",
+    copy:
+      "Students should use hierarchy, typography, color, spacing, and responsive patterns to make the support pathway feel obvious and trustworthy."
+  },
+  {
+    type: "cards",
+    section: "Applied Case Study",
+    eyebrow: "UI Priorities",
+    title: "What the UI team should solve",
+    cards: [
+      ["Hierarchy", "Make the primary CTA visually stronger than every secondary action."],
+      ["Trust", "Use layout, spacing, type, and color to make the service feel credible and supportive."],
+      ["Responsive design", "Show how the interface stays readable and scannable on mobile screens."],
+      ["Output", "Design the homepage, service options page, and one content page with a consistent visual system."]
+    ]
+  },
+  {
+    type: "list",
+    section: "Applied Case Study",
+    eyebrow: "UI Build Checklist",
+    title: "The Quitline interface should make these actions obvious",
+    items: [
+      "Call 1600",
+      "Add LINE OA",
+      "Talk to QuitBot",
+      "Start an assessment"
+    ]
+  },
+  {
+    type: "workshop",
+    section: "Applied Case Study",
+    eyebrow: "Deliverables",
+    title: "What teams add in Day 2",
+    copy:
+      "Turn the Day 1 wireframes into polished UI screens with a clear homepage hierarchy, strong CTA styling, readable mobile layout, and a short rationale for the visual decisions.",
+    timer: "UI build handoff"
+  },
+  {
+    type: "section",
     section: "Landing Page Workshop",
     eyebrow: "Section 6 · 15:30-16:30",
     title: "Full landing page workshop",
