@@ -1147,6 +1147,38 @@ const slides = [
         ]
       },
       {
+        title: "Class materials",
+        body: "Download the worksheet pack and cheat sheet used across lecture, workshop, and review.",
+        items: [
+          "Website fundamentals worksheet",
+          "Sitemap sprint worksheet",
+          "Web UX/UI cheat sheet",
+          "Flow mapping worksheet"
+        ],
+        links: [
+          {
+            label: "Website fundamentals worksheet",
+            href: "ClassMaterials/Website Design Fundamental - Worksheet.png",
+            download: true
+          },
+          {
+            label: "Sitemap sprint worksheet",
+            href: "ClassMaterials/SITEMAP Sprint Worksheet.png",
+            download: true
+          },
+          {
+            label: "Web UX/UI cheat sheet",
+            href: "ClassMaterials/Web UX:UI CHEAT SHEET.png",
+            download: true
+          },
+          {
+            label: "Flow mapping worksheet",
+            href: "ClassMaterials/Flow Mapping Worksheet.png",
+            download: true
+          }
+        ]
+      },
+      {
         title: "Homework deliverables",
         body: "Bring these into Day 2 so UI work starts from stronger UX logic.",
         items: [
@@ -1260,6 +1292,18 @@ function escapeHtml(value) {
     .replaceAll("'", "&#39;");
 }
 
+function renderResourceLinks(links = []) {
+  if (!links.length) return "";
+
+  return `<div class="resource-links">${links
+    .map(({ label, href, download }) => {
+      const safeHref = escapeHtml(encodeURI(href));
+      const downloadAttribute = download ? " download" : "";
+      return `<a class="resource-link" href="${safeHref}"${downloadAttribute}>${escapeHtml(label)}</a>`;
+    })
+    .join("")}</div>`;
+}
+
 function renderPills(pills = []) {
   if (!pills.length) return "";
   return `<div class="meta-row">${pills
@@ -1335,13 +1379,14 @@ function renderResources(resources = [], desktopHorizontal = false) {
 
   return `<div class="${className}">${resources
     .map(
-      ({ title, body, items }) => `
+      ({ title, body, items = [], links = [] }) => `
         <article class="resource-card">
           <h3>${escapeHtml(title)}</h3>
           <p class="slide-copy">${escapeHtml(body)}</p>
           <ul>
             ${items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}
           </ul>
+          ${renderResourceLinks(links)}
         </article>
       `
     )

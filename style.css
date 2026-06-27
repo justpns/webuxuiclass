@@ -445,6 +445,30 @@ button {
   margin: 0;
 }
 
+.resource-links {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.resource-link {
+  display: block;
+  padding: 0.75rem 0.9rem;
+  border-radius: 14px;
+  border: 1px solid rgba(41, 151, 255, 0.24);
+  background: rgba(41, 151, 255, 0.1);
+  color: #d7ebff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 180ms ease, background 180ms ease, border-color 180ms ease;
+}
+
+.resource-link:hover,
+.resource-link:focus-visible {
+  transform: translateY(-1px);
+  background: rgba(41, 151, 255, 0.16);
+  border-color: rgba(41, 151, 255, 0.42);
+}
+
 .bookmark-rail {
   position: fixed;
   right: 0.8rem;

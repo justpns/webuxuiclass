@@ -520,6 +520,30 @@ button {
   background: rgba(255, 255, 255, 0.03);
 }
 
+.resource-links {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.resource-link {
+  display: block;
+  padding: 0.72rem 0.88rem;
+  border-radius: 14px;
+  border: 1px solid rgba(99, 230, 190, 0.26);
+  background: rgba(99, 230, 190, 0.1);
+  color: #e5fff7;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 180ms ease, background 180ms ease, border-color 180ms ease;
+}
+
+.resource-link:hover,
+.resource-link:focus-visible {
+  transform: translateY(-1px);
+  background: rgba(99, 230, 190, 0.16);
+  border-color: rgba(99, 230, 190, 0.42);
+}
+
 .bookmark-rail {
   position: fixed;
   right: 0.8rem;
