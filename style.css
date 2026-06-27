@@ -704,12 +704,12 @@ button {
   text-align: center;
 }
 
-.nav-status span:first-child {
+.nav-status .slide-counter {
   color: var(--text);
   font-weight: 600;
 }
 
-.nav-status span:last-child {
+.nav-status .slide-title {
   color: var(--muted);
   font-size: 0.94rem;
   white-space: nowrap;

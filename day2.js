@@ -945,6 +945,13 @@ function escapeHtml(value) {
     .replaceAll("'", "&#39;");
 }
 
+function buildNavNote(slide) {
+  if (!slide.notes) return slide.title;
+
+  const lifeMatch = slide.notes.match(/Everyday life:\s*(.*?)\s*(?=Ask:|Watch for:|Transition:|$)/);
+  return lifeMatch ? lifeMatch[1].trim() : slide.title;
+}
+
 function renderResourceLinks(links = []) {
   if (!links.length) return "";
 
@@ -1367,9 +1374,11 @@ function renderBookmarks() {
 function updateChrome(index) {
   const slide = slides[index];
   const progress = ((index + 1) / slides.length) * 100;
+  const noteSummary = buildNavNote(slide);
   currentSection.textContent = slide.section;
   slideCounter.textContent = `${index + 1} / ${slides.length}`;
-  slideTitle.textContent = slide.title;
+  slideTitle.textContent = noteSummary;
+  slideTitle.title = slide.notes || slide.title;
   progressBar.style.width = `${progress}%`;
   prevButton.disabled = index === 0;
   nextButton.disabled = index === slides.length - 1;
