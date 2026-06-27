@@ -322,6 +322,16 @@ const slides = [
       "This is the first live demonstration of scanning behavior. The goal is not perfect recall, but noticing what the interface communicated first."
   },
   {
+    type: "prompt",
+    section: "Modern UX Mindset",
+    eyebrow: "AI Prompt",
+    title: "5-second homepage test prompt",
+    prompt:
+      "Act as a UX reviewer. Review this homepage concept using a 5-second test mindset. Answer: 1) What would users understand in 5 seconds? 2) What may still be unclear? 3) Is the target user obvious? 4) Is the main CTA obvious? 5) What should be rewritten to improve clarity? 6) What should be removed or reduced?",
+    notes:
+      "Use this right after the live 5-second test. It reinforces that clarity should be evaluated before detailed reading begins."
+  },
+  {
     type: "cards",
     section: "Modern UX Mindset",
     eyebrow: "Conventions",
@@ -449,9 +459,9 @@ const slides = [
     eyebrow: "AI Prompt",
     title: "Research prompt for target users",
     prompt:
-      "Analyze the target users for a [business type] website. Identify their goals, fears, questions, decision factors, and success criteria.",
+      "Act as a UX strategist for a [business type] website. Create a quick proto-persona for the primary user. Include their goal, key questions, fears or hesitation, decision factors, device context, emotional state, and what the homepage must answer, support, and remove.",
     notes:
-      "Tell students that the prompt is just a starting point. They still need to validate relevance and remove generic filler."
+      "This version mirrors the cheat sheet structure and pushes students to ask for usable design signals instead of a generic persona paragraph."
   },
   {
     type: "cards",
@@ -622,9 +632,9 @@ const slides = [
     eyebrow: "AI Prompt",
     title: "Sitemap generation prompt",
     prompt:
-      "Create a simple sitemap for a [business type] website. Prioritize clarity, conversion, and mobile-first navigation. Limit the main menu to 5 items.",
+      "Create a simple sitemap for a [business type] website. Include top-level pages, likely sub-pages, clear menu labels, and notes on what to remove, merge, or keep out of the main navigation. Prioritize clarity, conversion, and mobile-first navigation. Limit the main menu to 5 items.",
     notes:
-      "Tell students to compare multiple AI outputs and merge only the strongest structure, not the most complete one."
+      "The important improvement is asking for removals and merges, not just extra pages. That keeps IA aligned with simplification."
   },
   {
     type: "statement",
@@ -738,9 +748,9 @@ const slides = [
     eyebrow: "AI Prompt",
     title: "Journey mapping prompt",
     prompt:
-      "Map the user journey for a [business type] landing page. Identify the main friction points and suggest clearer CTAs.",
+      "Map the user flow for a [business type] landing page from landing to action. Show what users need, feel, and question at each step. Identify friction points, trust signals, the next action at each stage, and clearer CTA options.",
     notes:
-      "Useful for ideation, but students still need to simplify the flow and remove unnecessary branches."
+      "This keeps the flow tied to user state and next-step logic instead of turning into a vague sequence diagram."
   },
   {
     type: "workshop",
@@ -856,9 +866,9 @@ const slides = [
     eyebrow: "AI Prompt",
     title: "Wireframe prompt",
     prompt:
-      "Create a mobile-first homepage wireframe for a [business type]. Use clear UX hierarchy, one primary CTA, and simple section order.",
+      "Create a mobile-first homepage wireframe for a [business type]. Include the purpose and content of each section, one primary CTA, supporting information, trust signals, and a simple section order from hero to confirmation or follow-up.",
     notes:
-      "Remind them that AI can suggest section orders, but they should still re-order based on user needs and business goals."
+      "Students should ask for section purpose, not only section names. That makes the AI output easier to critique and refine."
   },
   {
     type: "checklist",
@@ -956,9 +966,9 @@ const slides = [
     eyebrow: "AI Prompt",
     title: "Critique prompt",
     prompt:
-      "Act as a UX reviewer. Critique this wireframe using Don't Make Me Think principles. Focus on clarity, cognitive load, navigation, CTA hierarchy, and user friction.",
+      "Critique this concept using 3 questions: 1) What is clear? 2) What is unclear? 3) What should change first? Then score clarity, CTA strength, trust, navigation, simplicity, and mobile usability from 1 to 5. Use Don't Make Me Think principles and explain the highest-priority fixes.",
     notes:
-      "Use this as a structured partner, not as the final judge. AI critique often spots patterns but lacks context."
+      "This format matches the critique scorecard and produces feedback that is easier for students to act on during review."
   },
   {
     type: "statement",
@@ -1056,6 +1066,16 @@ const slides = [
       "The UI execution continues in Day 2. Day 1 should end with a strong structural direction."
   },
   {
+    type: "prompt",
+    section: "Applied Case Study",
+    eyebrow: "AI Prompt",
+    title: "Quitline 1600 case prompt",
+    prompt:
+      "Act as a UX strategist for a public health service website. Project: Quitline 1600 website redesign. Help people who want to quit smoking understand support options and take the next step. Create: 1) a user snapshot, 2) a simplified sitemap, 3) a short flow map, 4) a mobile-first homepage structure, 5) primary and secondary CTAs, 6) likely friction points, 7) trust signals, and 8) what to remove or simplify. Keep the design clear, supportive, trustworthy, low-pressure, and easy to act on.",
+    notes:
+      "Use this when teams begin the case study so the AI output stays anchored in the actual class brief instead of generic wellness website patterns."
+  },
+  {
     type: "statement",
     section: "Applied Case Study",
     eyebrow: "Final Brief",
@@ -1070,25 +1090,24 @@ const slides = [
     section: "AI Prompt Library",
     eyebrow: "Prompt Library",
     title: "AI prompt library",
-    subtitle: "Reusable prompts for Day 1 workshops and homework.",
+    subtitle: "Reusable context patterns for Day 1 workshops and homework.",
     notes:
-      "Introduce this as a practical toolkit students can continue using after class."
+      "The section now complements the prompts already embedded in each lesson instead of repeating them."
   },
   {
     type: "prompt-grid",
     section: "AI Prompt Library",
     eyebrow: "Prompt Set",
-    title: "Six prompts to keep",
+    title: "Five context patterns to keep",
     prompts: [
-      ["UX Audit", "Analyze this website using Don't Make Me Think principles. Focus on clarity, cognitive load, navigation, CTA visibility, and user friction."],
-      ["Persona", "Create a practical UX persona for a [business type] website. Include user goals, fears, decision factors, questions, and success criteria."],
-      ["Sitemap", "Create a simple mobile-first sitemap for a [business type] website. Limit the main navigation to 5 items and explain why each item is needed."],
-      ["User Flow", "Map a user journey from homepage arrival to successful conversion for a [business type]. Identify friction points and suggest clearer CTAs."],
-      ["Wireframe", "Create a low-fidelity mobile-first homepage wireframe structure for a [business type]. Use clear hierarchy and one primary CTA."],
-      ["Critique", "Act as a senior UX reviewer. Critique this wireframe for clarity, simplicity, navigation, CTA hierarchy, and cognitive load. Suggest what to remove first."]
+      ["Before / After", "Show the current version first, then propose an improved version and explain why the new version is clearer or easier to act on."],
+      ["Remove 50%", "Remove, merge, or simplify at least 50% of anything unnecessary so the strongest signals stay visible."],
+      ["CTA Rewrite", "Generate multiple CTA label options that are clearer, more action-oriented, softer, or more trust-building depending on the audience."],
+      ["Audience Tailoring", "Adapt the same content for different user types such as first-time visitors, returning users, hesitant users, or urgent users."],
+      ["Device Adaptation", "Adapt the same concept for mobile and desktop without adding unnecessary complexity or breaking the core hierarchy."]
     ],
     notes:
-      "Tell students to treat prompt wording as a starting point. They should adapt each prompt to their domain and assignment."
+      "These are the reusable prompt patterns students can layer onto any section-specific prompt from the day."
   },
   {
     type: "section",
@@ -1148,13 +1167,7 @@ const slides = [
       },
       {
         title: "Class materials",
-        body: "Download the worksheet pack and cheat sheet used across lecture, workshop, and review.",
-        items: [
-          "Website fundamentals worksheet",
-          "Sitemap sprint worksheet",
-          "Web UX/UI cheat sheet",
-          "Flow mapping worksheet"
-        ],
+        body: "Download the worksheet pack, UX/UI references, and prompt guide used across lecture, workshop, and review.",
         links: [
           {
             label: "Website fundamentals worksheet",
@@ -1169,6 +1182,11 @@ const slides = [
           {
             label: "Web UX/UI cheat sheet",
             href: "ClassMaterials/Web UX:UI CHEAT SHEET.png",
+            download: true
+          },
+          {
+            label: "UX context engineering prompt cheat sheet",
+            href: "ClassMaterials/UX Context Engineering Prompt Cheat Sheet.png",
             download: true
           },
           {

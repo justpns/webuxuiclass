@@ -865,13 +865,7 @@ const slides = [
       },
       {
         title: "Class materials",
-        body: "Reuse the same worksheets and cheat sheet while refining hierarchy, layout, and critique decisions.",
-        items: [
-          "Website fundamentals worksheet",
-          "Sitemap sprint worksheet",
-          "Web UX/UI cheat sheet",
-          "Flow mapping worksheet"
-        ],
+        body: "Reuse the same worksheets, UX/UI references, and prompt guide while refining hierarchy, layout, and critique decisions.",
         links: [
           {
             label: "Website fundamentals worksheet",
@@ -886,6 +880,11 @@ const slides = [
           {
             label: "Web UX/UI cheat sheet",
             href: "ClassMaterials/Web UX:UI CHEAT SHEET.png",
+            download: true
+          },
+          {
+            label: "UX context engineering prompt cheat sheet",
+            href: "ClassMaterials/UX Context Engineering Prompt Cheat Sheet.png",
             download: true
           },
           {
