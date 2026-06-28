@@ -81,6 +81,15 @@ const slides = [
       "Mention break and lunch timing verbally. Emphasize that each major session produces a tangible output students will use later."
   },
   {
+    type: "profile-image",
+    section: "Opening",
+    eyebrow: "About Me",
+    title: "About me",
+    image: "About Me.png",
+    notes:
+      "Use this slide to build trust quickly and keep it short. Position yourself as a guide who cares about practical decision-making more than decoration."
+  },
+  {
     type: "cards",
     section: "Opening",
     eyebrow: "Course Roadmap",
@@ -1292,6 +1301,7 @@ const facilitatorNotesByTitle = {
   "By the end of today, students can": "Focus: Set measurable learning outcomes so students know what success looks like. Everyday life: A workout plan feels easier when you know the exercises in advance. Ask: Which skill feels hardest right now? Watch for: Students hearing the day as theory only. Transition: Move from outcomes into the schedule.",
   "Day 1 schedule": "Focus: Show that the day alternates between explanation and application. Everyday life: A travel itinerary reduces anxiety because the route is visible. Ask: Which session are you most curious about? Watch for: Students assuming they will only listen all day. Transition: Break the agenda into concrete blocks.",
   "Session flow": "Focus: Each block should produce a usable output. Everyday life: A checklist makes a big task feel manageable. Ask: Why is it useful to alternate lecture and workshop? Watch for: Treating each section as isolated instead of cumulative. Transition: Zoom out to the three-day journey.",
+  "About me": "Focus: Build trust quickly and position yourself as a practical guide. Everyday life: Before taking advice, people want to know who is guiding them and why they should listen. Ask: What part of digital design are you most curious about learning today? Watch for: Spending too long on biography instead of class momentum. Transition: Move from personal introduction back into the course roadmap.",
   "Three-day journey": "Focus: UX comes before UI, and UI comes before development. Everyday life: You plan the house before choosing paint colors. Ask: What happens if UI starts before UX? Watch for: Students wanting to jump straight into screens. Transition: Warm up with real website experiences they already know.",
   "What is the best website experience you remember?": "Focus: Get students to describe usability in their own words. Everyday life: Think of a booking, shopping, or food delivery site that felt effortless. Ask: What made it feel easy? Watch for: Answers that mention only aesthetics. Transition: Use their examples to introduce scanning behavior.",
   "Modern UX mindset": "Focus: Reset expectations around distracted web behavior. Everyday life: People skim menus, posters, and signs before reading details. Ask: Do users really read everything on a page? Watch for: Designing for ideal patient readers. Transition: State the scanning reality directly.",
@@ -1507,6 +1517,21 @@ function renderWorksheets(worksheets = []) {
       `
     )
     .join("")}</div>`;
+}
+
+function renderProfileSlide(slide) {
+  const imageSrc = escapeHtml(encodeURI(slide.image));
+  return `
+    <div class="slide-shell profile-image-layout">
+      <div>
+        ${slide.eyebrow ? `<p class="eyebrow">${escapeHtml(slide.eyebrow)}</p>` : ""}
+        <h2 class="section-title">${escapeHtml(slide.title)}</h2>
+      </div>
+      <div class="profile-media profile-media-full">
+        <img class="profile-image profile-image-large" src="${imageSrc}" alt="${escapeHtml(slide.title)}" />
+      </div>
+    </div>
+  `;
 }
 
 function renderResources(resources = [], desktopHorizontal = false) {
@@ -1808,6 +1833,8 @@ function buildSlideMarkup(slide) {
           ${renderCards(slide.cards)}
         </div>
       `;
+    case "profile-image":
+      return renderProfileSlide(slide);
     case "compare":
       return `
         <div class="slide-shell">

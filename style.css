@@ -386,6 +386,46 @@ button {
   gap: 1rem;
 }
 
+.profile-layout {
+  display: grid;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.profile-image-layout {
+  display: grid;
+  gap: 1rem;
+}
+
+.profile-media {
+  padding: 0.85rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1.5rem;
+}
+
+.profile-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 1.1rem;
+  object-fit: cover;
+}
+
+.profile-copy {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.profile-media-full {
+  padding: 1rem;
+}
+
+.profile-image-large {
+  max-height: min(72vh, 860px);
+  margin-inline: auto;
+}
+
 .quote-mark {
   font-size: clamp(4rem, 12vw, 8rem);
   line-height: 0.8;
@@ -816,6 +856,8 @@ button {
   }
 
   .split-layout,
+  .profile-layout,
+  .profile-image-layout,
   .grid.two,
   .compare-grid,
   .metrics-grid,
@@ -847,6 +889,10 @@ button {
   .split-layout {
     grid-template-columns: 1.1fr 0.9fr;
     align-items: start;
+  }
+
+  .profile-layout {
+    grid-template-columns: minmax(260px, 0.85fr) minmax(0, 1.15fr);
   }
 
   .cards-grid.three {
