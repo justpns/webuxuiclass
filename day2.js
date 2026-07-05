@@ -2,11 +2,11 @@ const slides = [
   {
     type: "hero",
     section: "Opening",
-    eyebrow: "Day 2 · UI Design + AI-Assisted Visual Design",
+    eyebrow: "Day 2 · Master's UI Studio",
     title: "UI Design + AI-Assisted Visual Design",
     subtitle: "Designing interfaces users understand instantly",
-    lede: "A full-day lecture on hierarchy, typography, color, responsive systems, and AI-supported interface craft.",
-    pills: ["09:00-17:00", "Mobile-first", "Figma workflow", "Student workshop"]
+    lede: "A postgraduate studio on hierarchy, readability, responsive systems, and evidence-based interface critique.",
+    pills: ["09:00-16:00", "Active learning", "Mobile-first", "Critique-led studio"]
   },
   {
     type: "statement",
@@ -69,15 +69,15 @@ const slides = [
   {
     type: "cards",
     section: "Opening",
-    eyebrow: "Modern UI Trends",
-    title: "What students are seeing in modern web design",
+    eyebrow: "Seminar Standard",
+    title: "Master's-level UI work requires defensible decisions",
     cards: [
-      ["Strong typography", "Large headlines carry hierarchy faster than long explanatory paragraphs."],
-      ["Minimal layouts", "Less chrome and fewer competing blocks increase clarity."],
-      ["Glass and depth", "Subtle transparency and layering create premium separation when used carefully."],
-      ["Motion systems", "Motion should support attention and continuity, not decoration."],
-      ["Storytelling sections", "Modern landing pages move users through a controlled sequence of ideas."],
-      ["Dark premium palettes", "Dark surfaces plus restrained accents often signal focus and sophistication."]
+      ["Rationale over taste", "Students should defend layout, type, and color decisions using hierarchy, scanning behavior, and user goals."],
+      ["Audience fit", "A visual direction is only strong when it matches context, trust needs, and task difficulty."],
+      ["Constraint-aware design", "Students should show what they reduced, what they emphasized, and why."],
+      ["Critical use of trends", "Minimalism, depth, motion, or dark palettes only work when they improve communication."],
+      ["Evidence in critique", "Feedback should identify cognitive load, hierarchy breakdowns, and CTA weakness instead of vague preference."],
+      ["Reflection on AI output", "Students should explain what AI generated, what was rejected, and what human judgment improved."]
     ]
   },
   {
@@ -95,9 +95,9 @@ const slides = [
   {
     type: "section",
     section: "Visual Hierarchy",
-    eyebrow: "Section 2 · 09:30-10:30",
+    eyebrow: "Section 2 · 09:20-10:15",
     title: "Visual hierarchy",
-    subtitle: "Students should learn how to control what gets noticed first."
+    subtitle: "Students should learn how to control what gets noticed first and defend that sequence."
   },
   {
     type: "metrics",
@@ -209,6 +209,66 @@ const slides = [
     svgKind: "gestalt"
   },
   {
+    type: "principle-diagram",
+    section: "Visual Hierarchy",
+    eyebrow: "Gestalt Principle",
+    title: "Proximity",
+    copy: "Elements placed close together are perceived as related, even before users read the labels.",
+    exampleTitle: "UI example",
+    exampleText: "Grouped form fields help users see which labels and inputs belong together.",
+    diagramKind: "proximity"
+  },
+  {
+    type: "principle-diagram",
+    section: "Visual Hierarchy",
+    eyebrow: "Gestalt Principle",
+    title: "Common region",
+    copy: "Elements inside the same container are perceived as one group because the boundary creates a shared region.",
+    exampleTitle: "UI example",
+    exampleText: "A checkout summary box feels like one decision block because totals, items, and actions sit inside one card.",
+    diagramKind: "common-region"
+  },
+  {
+    type: "principle-diagram",
+    section: "Visual Hierarchy",
+    eyebrow: "Gestalt Principle",
+    title: "Closure",
+    copy: "Users mentally complete missing shapes or incomplete visual information when the overall pattern is still clear.",
+    exampleTitle: "UI example",
+    exampleText: "A progress ring still reads as progress even when part of the circle is missing.",
+    diagramKind: "closure"
+  },
+  {
+    type: "principle-diagram",
+    section: "Visual Hierarchy",
+    eyebrow: "Gestalt Principle",
+    title: "Emergence",
+    copy: "Users understand the overall structure first, then notice the smaller details inside it.",
+    exampleTitle: "UI example",
+    exampleText: "A dashboard layout is recognized as navigation, metrics, and activity before individual data points are read.",
+    diagramKind: "emergence"
+  },
+  {
+    type: "principle-diagram",
+    section: "Visual Hierarchy",
+    eyebrow: "Gestalt Principle",
+    title: "Similarity",
+    copy: "Elements with the same color, size, shape, or style feel related because they look like one system.",
+    exampleTitle: "UI example",
+    exampleText: "Matching buttons and status labels feel connected even when separated by space.",
+    diagramKind: "similarity"
+  },
+  {
+    type: "principle-diagram",
+    section: "Visual Hierarchy",
+    eyebrow: "Gestalt Principle",
+    title: "Simplicity",
+    copy: "Users prefer the clearest and simplest interpretation instead of a more complex visual reading.",
+    exampleTitle: "UI example",
+    exampleText: "A clean product grid with one action per card is easier to understand than a crowded layout with mixed signals.",
+    diagramKind: "simplicity"
+  },
+  {
     type: "svg-example",
     section: "Visual Hierarchy",
     eyebrow: "Visual Example",
@@ -244,8 +304,8 @@ const slides = [
     section: "Visual Hierarchy",
     eyebrow: "Exercise",
     title: "Simplification challenge",
-    copy: "Remove 30% of unnecessary UI from a sample layout. Students must justify what stays and what loses emphasis.",
-    timer: "8-10 minutes"
+    copy: "Remove 30% of unnecessary UI from a sample layout. Students must justify what stays, what loses emphasis, and what user task becomes clearer.",
+    timer: "10 minutes"
   },
   {
     type: "prompt",
@@ -259,15 +319,15 @@ const slides = [
     section: "Visual Hierarchy",
     eyebrow: "Workshop",
     title: "Compare good, bad, and AI-generated hierarchy",
-    copy: "Students analyze three versions of a screen and explain what gets noticed first, what distracts, and what should be removed.",
-    timer: "10 minutes"
+    copy: "Students analyze three versions of a screen and explain what gets noticed first, what distracts, what should be removed, and which option best supports task completion.",
+    timer: "15 minutes"
   },
   {
     type: "section",
     section: "Typography + Color",
     eyebrow: "Section 3 · 10:45-12:00",
     title: "Typography + color systems",
-    subtitle: "Readable interfaces feel better because they reduce effort."
+    subtitle: "Readable interfaces perform better because they reduce effort and increase trust."
   },
   {
     type: "statement",
@@ -374,13 +434,13 @@ const slides = [
   {
     type: "cards",
     section: "Typography + Color",
-    eyebrow: "Dark UI",
-    title: "Why premium dark interfaces work",
+    eyebrow: "Visual Signaling",
+    title: "Visual tone should match audience and trust needs",
     cards: [
-      ["Deep backgrounds", "They allow bright text and accents to separate cleanly."],
-      ["Subtle gradients", "They add atmosphere without adding clutter."],
-      ["Glow accents", "Good for emphasis if used in moderation."],
-      ["Restrained palette", "Too many bright colors break the premium feel quickly."]
+      ["Dark surfaces", "They can feel premium and focused, but only when contrast stays readable."],
+      ["Muted systems", "Lower-saturation palettes can reduce stress and strengthen professional tone."],
+      ["Warm accents", "They can create urgency or reassurance depending on placement and intensity."],
+      ["Audience fit", "Color direction should support credibility, emotional tone, and the user's decision context."]
     ]
   },
   {
@@ -431,15 +491,15 @@ const slides = [
     section: "Typography + Color",
     eyebrow: "Workshop",
     title: "Build a basic visual system",
-    copy: "Students define a type scale, a simple palette, and a UI moodboard before they move into layout design.",
+    copy: "Students define a type scale, a simple palette, and a UI moodboard, then justify how those choices support audience, readability, and trust.",
     timer: "15 minutes"
   },
   {
     type: "section",
     section: "AI-Assisted UI Design",
-    eyebrow: "Section 4 · 13:00-14:30",
+    eyebrow: "Section 4 · 13:00-13:40",
     title: "AI-assisted UI design",
-    subtitle: "AI should accelerate exploration, not replace visual judgment."
+    subtitle: "AI should accelerate exploration, not replace visual judgment or design accountability."
   },
   {
     type: "list",
@@ -478,13 +538,13 @@ const slides = [
   {
     type: "cards",
     section: "AI-Assisted UI Design",
-    eyebrow: "Modern Stack",
-    title: "Common tools in the workflow",
+    eyebrow: "Workflow Roles",
+    title: "Where tools fit in the workflow",
     cards: [
-      ["Figma", "Layout construction, components, iteration, collaboration."],
-      ["Framer", "Fast visual site building and interactive exploration."],
-      ["Canva", "Quick moodboard, social visual, or early concept support."],
-      ["ChatGPT / Gemini", "Prompting, copy drafts, critique, structure ideas."]
+      ["Figma", "Layout construction, component decisions, iteration, and critique-ready screens."],
+      ["Framer", "Fast visual exploration when motion or pacing needs to be tested."],
+      ["Canva", "Early moodboard support when teams need quick visual references, not final logic."],
+      ["ChatGPT / Gemini", "Prompting, copy drafts, critique structure, and alternative hierarchy directions."]
     ]
   },
   {
@@ -589,15 +649,15 @@ const slides = [
     section: "AI-Assisted UI Design",
     eyebrow: "Workshop",
     title: "Build a UI direction in Figma",
-    copy: "Students create a hero section, navigation, feature cards, and CTA structure using their chosen palette and type system.",
+    copy: "Students create a hero section, navigation, feature cards, and CTA structure using their chosen palette and type system, then explain what AI accelerated and what still required manual refinement.",
     timer: "25 minutes"
   },
   {
     type: "section",
     section: "Responsive UI",
-    eyebrow: "Section 5 · 14:30-15:15",
+    eyebrow: "Section 5 · 13:40-14:15",
     title: "Responsive UI + mobile first",
-    subtitle: "The UI should stay clear when the screen gets smaller."
+    subtitle: "The UI should stay clear when the screen gets smaller and more selective."
   },
   {
     type: "statement",
@@ -673,15 +733,15 @@ const slides = [
     section: "Responsive UI",
     eyebrow: "Workshop",
     title: "Redesign desktop to mobile",
-    copy: "Students simplify a desktop concept into a mobile-first layout while preserving message hierarchy and CTA logic.",
+    copy: "Students simplify a desktop concept into a mobile-first layout while preserving message hierarchy, CTA logic, and first-screen clarity.",
     timer: "15 minutes"
   },
   {
     type: "section",
     section: "Applied Case Study",
-    eyebrow: "Case Study Handoff",
+    eyebrow: "Case Study Handoff · 14:15-14:30",
     title: "Quitline 1600 UI workshop",
-    subtitle: "Day 2 turns the Day 1 UX structure into a visual interface system."
+    subtitle: "Day 2 turns the Day 1 UX structure into a visual interface system under clear service constraints."
   },
   {
     type: "statement",
@@ -700,7 +760,7 @@ const slides = [
       ["Hierarchy", "Make the primary CTA visually stronger than every secondary action."],
       ["Trust", "Use layout, spacing, type, and color to make the service feel credible and supportive."],
       ["Responsive design", "Show how the interface stays readable and scannable on mobile screens."],
-      ["Output", "Design the homepage, service options page, and one content page with a consistent visual system."]
+      ["Output", "Design the homepage, service options page, and one content page with a consistent visual system and a written rationale."]
     ]
   },
   {
@@ -721,15 +781,15 @@ const slides = [
     eyebrow: "Deliverables",
     title: "What teams add in Day 2",
     copy:
-      "Turn the Day 1 wireframes into polished UI screens with a clear homepage hierarchy, strong CTA styling, readable mobile layout, and a short rationale for the visual decisions.",
+      "Turn the Day 1 wireframes into polished UI screens with a clear homepage hierarchy, strong CTA styling, readable mobile layout, and a short rationale for the visual decisions and tradeoffs.",
     timer: "UI build handoff"
   },
   {
     type: "section",
     section: "Landing Page Workshop",
-    eyebrow: "Section 6 · 15:30-16:30",
-    title: "Full landing page workshop",
-    subtitle: "Students combine UX structure and UI systems into one build."
+    eyebrow: "Section 6 · 14:30-15:30",
+    title: "Applied studio build",
+    subtitle: "Students combine UX structure and UI systems into one defended build."
   },
   {
     type: "cards",
@@ -767,7 +827,8 @@ const slides = [
       ["Hierarchy", "Is the attention order controlled?"],
       ["Usability", "Do actions and content feel easy to use?"],
       ["Responsiveness", "Does mobile stay clean and readable?"],
-      ["Consistency", "Do type, color, spacing, and components feel related?"]
+      ["Consistency", "Do type, color, spacing, and components feel related?"],
+      ["Rationale", "Can the team defend its decisions with audience, task, and trust logic?"]
     ]
   },
   {
@@ -782,15 +843,15 @@ const slides = [
     section: "Landing Page Workshop",
     eyebrow: "Workshop Time",
     title: "Independent build block",
-    copy: "Students build the landing page direction independently while the instructor critiques hierarchy, typography, spacing, and CTA clarity.",
-    timer: "35-40 minutes"
+    copy: "Students build the landing page direction independently while the instructor critiques hierarchy, typography, spacing, CTA clarity, and the strength of their design rationale.",
+    timer: "60 minutes"
   },
   {
     type: "section",
     section: "Presentation + Critique",
-    eyebrow: "Section 7 · 16:30-17:00",
+    eyebrow: "Section 7 · 15:30-16:00",
     title: "Presentation + critique",
-    subtitle: "Students explain their design choices, not just show screens."
+    subtitle: "Students explain and defend their design choices, not just show screens."
   },
   {
     type: "list",
@@ -801,6 +862,7 @@ const slides = [
       "Who the target audience is.",
       "Why the hierarchy was organized this way.",
       "How the CTA strategy supports the business goal.",
+      "How mobile prioritization changed the design.",
       "How AI was used and what was manually refined."
     ]
   },
@@ -813,7 +875,8 @@ const slides = [
       "What stands out first?",
       "Is the CTA obvious enough?",
       "Does mobile feel clean and readable?",
-      "Is anything visually distracting or unnecessary?"
+      "Is anything visually distracting or unnecessary?",
+      "Can the rationale be defended beyond personal taste?"
     ]
   },
   {
@@ -925,6 +988,7 @@ const progressBar = document.getElementById("progress-bar");
 const currentSection = document.getElementById("current-section");
 const slideCounter = document.getElementById("slide-counter");
 const slideTitle = document.getElementById("slide-title");
+const slideCue = document.getElementById("slide-cue");
 const prevButton = document.getElementById("prev-button");
 const nextButton = document.getElementById("next-button");
 const fullscreenToggle = document.getElementById("fullscreen-toggle");
@@ -950,6 +1014,25 @@ function buildNavNote(slide) {
 
   const lifeMatch = slide.notes.match(/Everyday life:\s*(.*?)\s*(?=Ask:|Watch for:|Transition:|$)/);
   return lifeMatch ? lifeMatch[1].trim() : slide.title;
+}
+
+function compactText(value, limit = 96) {
+  if (!value) return "";
+
+  const normalized = String(value).replace(/\s+/g, " ").trim();
+  if (normalized.length <= limit) return normalized;
+  return `${normalized.slice(0, limit - 1).trimEnd()}…`;
+}
+
+function buildNavCue(slide) {
+  if (slide.navCue) return slide.navCue;
+  if (slide.notes) return compactText(buildNavNote(slide));
+  if (slide.type === "section" && slide.subtitle) return compactText(slide.subtitle);
+  if (slide.timer) return `${slide.eyebrow || slide.section} · ${slide.timer}`;
+  if (slide.eyebrow) return compactText(slide.eyebrow);
+  if (slide.copy) return compactText(slide.copy);
+  if (slide.prompt) return "Prompt for critique and iteration";
+  return slide.section;
 }
 
 function renderResourceLinks(links = []) {
@@ -1171,6 +1254,106 @@ function renderWireframe(blocks = []) {
   `;
 }
 
+function renderPrincipleDiagram(kind) {
+  const diagrams = {
+    proximity: `
+      <div class="principle-canvas principle-proximity" aria-hidden="true">
+        <div class="principle-phone">
+          <div class="principle-stack">
+            <div class="mini-label"></div>
+            <div class="mini-field"></div>
+            <div class="mini-label near"></div>
+            <div class="mini-field"></div>
+            <div class="mini-label far"></div>
+            <div class="mini-field"></div>
+          </div>
+          <div class="proximity-bracket bracket-top"></div>
+          <div class="proximity-bracket bracket-bottom"></div>
+        </div>
+      </div>
+    `,
+    "common-region": `
+      <div class="principle-canvas principle-region" aria-hidden="true">
+        <div class="region-shell">
+          <div class="region-card">
+            <div class="mini-heading short"></div>
+            <div class="mini-row">
+              <div class="mini-chip"></div>
+              <div class="mini-chip"></div>
+            </div>
+            <div class="mini-field wide"></div>
+            <div class="mini-button accent"></div>
+          </div>
+          <div class="region-note">Same container = same group</div>
+        </div>
+      </div>
+    `,
+    closure: `
+      <div class="principle-canvas principle-closure" aria-hidden="true">
+        <div class="closure-stage">
+          <div class="progress-ring">
+            <div class="progress-gap"></div>
+            <div class="progress-core"></div>
+          </div>
+          <div class="mini-heading short"></div>
+          <div class="mini-field medium"></div>
+        </div>
+      </div>
+    `,
+    emergence: `
+      <div class="principle-canvas principle-emergence" aria-hidden="true">
+        <div class="dashboard-shell">
+          <div class="dashboard-nav"></div>
+          <div class="dashboard-main">
+            <div class="dashboard-hero"></div>
+            <div class="dashboard-grid">
+              <div class="dashboard-card"></div>
+              <div class="dashboard-card"></div>
+              <div class="dashboard-card wide"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    `,
+    similarity: `
+      <div class="principle-canvas principle-similarity" aria-hidden="true">
+        <div class="similarity-shell">
+          <div class="similarity-row">
+            <div class="mini-pill accent">New</div>
+            <div class="mini-pill accent">New</div>
+            <div class="mini-pill muted">Old</div>
+          </div>
+          <div class="similarity-row">
+            <div class="mini-button accent"></div>
+            <div class="mini-button accent"></div>
+            <div class="mini-button muted"></div>
+          </div>
+        </div>
+      </div>
+    `,
+    simplicity: `
+      <div class="principle-canvas principle-simplicity" aria-hidden="true">
+        <div class="simplicity-shell">
+          <div class="product-card">
+            <div class="product-thumb"></div>
+            <div class="mini-heading short"></div>
+            <div class="mini-field short"></div>
+            <div class="mini-button accent"></div>
+          </div>
+          <div class="product-card">
+            <div class="product-thumb"></div>
+            <div class="mini-heading short"></div>
+            <div class="mini-field short"></div>
+            <div class="mini-button accent"></div>
+          </div>
+        </div>
+      </div>
+    `
+  };
+
+  return diagrams[kind] ?? "";
+}
+
 function buildSlideMarkup(slide) {
   const eyebrow = slide.eyebrow ? `<p class="eyebrow">${escapeHtml(slide.eyebrow)}</p>` : "";
 
@@ -1315,6 +1498,23 @@ function buildSlideMarkup(slide) {
           ${renderSvgExample(slide.svgKind)}
         </div>
       `;
+    case "principle-diagram":
+      return `
+        <div class="slide-shell split-layout">
+          <div>
+            ${eyebrow}
+            <h2 class="section-title">${escapeHtml(slide.title)}</h2>
+            <p class="slide-copy">${escapeHtml(slide.copy)}</p>
+            <article class="principle-example-card">
+              <h3>${escapeHtml(slide.exampleTitle)}</h3>
+              <p class="slide-copy">${escapeHtml(slide.exampleText)}</p>
+            </article>
+          </div>
+          <div class="principle-demo-shell">
+            ${renderPrincipleDiagram(slide.diagramKind)}
+          </div>
+        </div>
+      `;
     case "quote":
       return `
         <div class="slide-shell">
@@ -1375,10 +1575,13 @@ function updateChrome(index) {
   const slide = slides[index];
   const progress = ((index + 1) / slides.length) * 100;
   const noteSummary = buildNavNote(slide);
+  const cueSummary = buildNavCue(slide);
   currentSection.textContent = slide.section;
   slideCounter.textContent = `${index + 1} / ${slides.length}`;
   slideTitle.textContent = noteSummary;
-  slideTitle.title = slide.notes || slide.title;
+  slideTitle.title = slide.title;
+  slideCue.textContent = cueSummary;
+  slideCue.title = cueSummary;
   progressBar.style.width = `${progress}%`;
   prevButton.disabled = index === 0;
   nextButton.disabled = index === slides.length - 1;

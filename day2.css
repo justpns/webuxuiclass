@@ -488,6 +488,304 @@ button {
   animation: pulse 1.8s ease-out infinite;
 }
 
+.principle-example-card {
+  margin-top: 1.2rem;
+  padding: 1.1rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+}
+
+.principle-example-card h3 {
+  margin: 0 0 0.45rem;
+  font-size: clamp(1.1rem, 3vw, 1.46rem);
+}
+
+.principle-demo-shell {
+  display: flex;
+  align-items: stretch;
+}
+
+.principle-canvas {
+  width: 100%;
+  min-height: 360px;
+  padding: 1.2rem;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.03));
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.principle-canvas::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 20% 15%, rgba(99, 230, 190, 0.12), transparent 14rem);
+  pointer-events: none;
+}
+
+.principle-phone,
+.region-shell,
+.closure-stage,
+.dashboard-shell,
+.similarity-shell,
+.simplicity-shell {
+  position: relative;
+  z-index: 1;
+}
+
+.principle-phone {
+  width: min(100%, 270px);
+  min-height: 280px;
+  padding: 1.1rem;
+  border-radius: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.04);
+}
+
+.principle-stack {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.mini-label,
+.mini-field,
+.mini-heading,
+.mini-button,
+.dashboard-nav,
+.dashboard-hero,
+.dashboard-card,
+.product-thumb {
+  border-radius: 999px;
+}
+
+.mini-label,
+.mini-heading,
+.dashboard-nav {
+  height: 12px;
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.mini-label {
+  width: 34%;
+}
+
+.mini-label.near {
+  margin-top: 0.55rem;
+}
+
+.mini-label.far {
+  margin-top: 1.35rem;
+}
+
+.mini-field,
+.dashboard-card,
+.product-thumb {
+  height: 42px;
+  background: rgba(255, 255, 255, 0.09);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+}
+
+.mini-field.wide {
+  width: 100%;
+}
+
+.mini-field.medium {
+  width: min(100%, 220px);
+}
+
+.mini-field.short {
+  width: 60%;
+}
+
+.proximity-bracket {
+  position: absolute;
+  left: calc(100% + 14px);
+  width: 34px;
+  border-left: 2px solid rgba(140, 233, 154, 0.9);
+  border-top: 2px solid rgba(140, 233, 154, 0.9);
+  border-bottom: 2px solid rgba(140, 233, 154, 0.9);
+  border-radius: 14px 0 0 14px;
+}
+
+.bracket-top {
+  top: 40px;
+  height: 108px;
+}
+
+.bracket-bottom {
+  top: 186px;
+  height: 62px;
+}
+
+.region-shell {
+  width: min(100%, 320px);
+}
+
+.region-card,
+.product-card {
+  padding: 1rem;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  display: grid;
+  gap: 0.8rem;
+}
+
+.mini-row,
+.similarity-row,
+.simplicity-shell {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.mini-chip,
+.mini-pill {
+  min-width: 64px;
+  min-height: 28px;
+  padding: 0.2rem 0.7rem;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.82rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mini-chip,
+.mini-pill.muted,
+.mini-button.muted {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--muted);
+}
+
+.mini-pill.accent,
+.mini-button.accent {
+  background: linear-gradient(135deg, rgba(99, 230, 190, 0.95), rgba(110, 168, 254, 0.85));
+  color: #08110d;
+}
+
+.mini-button {
+  width: 132px;
+  height: 40px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.region-note {
+  margin-top: 0.8rem;
+  color: var(--accent-2);
+  font-size: 0.92rem;
+  text-align: center;
+}
+
+.closure-stage {
+  display: grid;
+  justify-items: center;
+  gap: 1.2rem;
+}
+
+.progress-ring {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: conic-gradient(from 220deg, var(--accent) 0deg 240deg, rgba(255, 255, 255, 0.08) 240deg 360deg);
+  position: relative;
+  box-shadow: 0 18px 42px rgba(99, 230, 190, 0.14);
+}
+
+.progress-gap {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  width: 54px;
+  height: 54px;
+  background: #06070b;
+  transform: rotate(22deg);
+}
+
+.progress-core {
+  position: absolute;
+  inset: 22px;
+  border-radius: 50%;
+  background: rgba(8, 11, 16, 0.98);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.dashboard-shell {
+  width: min(100%, 420px);
+  min-height: 270px;
+  padding: 0.85rem;
+  display: grid;
+  grid-template-columns: 74px 1fr;
+  gap: 0.8rem;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.dashboard-nav {
+  height: auto;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.dashboard-main {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.dashboard-hero {
+  height: 56px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(110, 168, 254, 0.24), rgba(99, 230, 190, 0.22));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.dashboard-grid {
+  display: grid;
+  gap: 0.8rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.dashboard-card.wide {
+  grid-column: 1 / -1;
+}
+
+.similarity-shell {
+  display: grid;
+  gap: 1rem;
+}
+
+.mini-heading.short {
+  width: 42%;
+}
+
+.mini-button.muted {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.simplicity-shell {
+  width: min(100%, 420px);
+}
+
+.product-card {
+  flex: 1;
+  min-width: 0;
+}
+
+.product-thumb {
+  height: 120px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(110, 168, 254, 0.22), rgba(99, 230, 190, 0.16));
+}
+
 .prompt-card code {
   display: block;
   margin-top: 0.7rem;
@@ -751,7 +1049,7 @@ button {
   min-width: 0;
   flex: 1;
   display: grid;
-  gap: 0.15rem;
+  gap: 0.1rem;
   text-align: center;
 }
 
@@ -761,8 +1059,17 @@ button {
 }
 
 .nav-status .slide-title {
-  color: var(--muted);
+  color: var(--text);
   font-size: 0.94rem;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.nav-status .slide-cue {
+  color: var(--muted);
+  font-size: 0.8rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -834,6 +1141,18 @@ button {
 }
 
 @media (max-width: 720px) {
+  .principle-canvas {
+    min-height: 300px;
+  }
+
+  .proximity-bracket {
+    display: none;
+  }
+
+  .simplicity-shell {
+    flex-direction: column;
+  }
+
   .meme-line-2,
   .meme-line-3 {
     margin-left: 0;
