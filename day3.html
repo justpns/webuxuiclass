@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 3 AI Workspace and Vibe Coding Lab</title>
+    <link rel="stylesheet" href="day3.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-a" aria-hidden="true"></div>
+    <div class="ambient ambient-b" aria-hidden="true"></div>
+    <div class="ambient ambient-c" aria-hidden="true"></div>
+
+    <header class="deck-chrome">
+      <div class="chrome-row">
+        <div class="chrome-meta">
+          <p class="chrome-label">Day 3 · AI Workspace &amp; Vibe Coding Lab</p>
+          <h1 class="chrome-section" id="current-section">Opening</h1>
+        </div>
+        <div class="chrome-actions">
+          <button class="chrome-button" id="fullscreen-toggle" type="button">
+            Fullscreen
+          </button>
+        </div>
+      </div>
+      <div class="progress-shell" aria-hidden="true">
+        <div class="progress-bar" id="progress-bar"></div>
+      </div>
+    </header>
+
+    <main class="deck" id="deck" aria-live="polite"></main>
+
+    <aside class="bookmark-rail" id="bookmark-rail" aria-label="Slide bookmarks"></aside>
+
+    <nav class="deck-nav" aria-label="Slide navigation">
+      <button class="nav-button" id="prev-button" type="button" aria-label="Previous slide">
+        Prev
+      </button>
+      <div class="nav-status">
+        <span class="slide-counter" id="slide-counter">1 / 1</span>
+        <span class="slide-title" id="slide-title">Loading</span>
+        <span class="slide-cue" id="slide-cue">Preparing slide cue</span>
+      </div>
+      <button class="nav-button nav-button-primary" id="next-button" type="button" aria-label="Next slide">
+        Next
+      </button>
+    </nav>
+
+    <template id="slide-template">
+      <section class="slide">
+        <div class="slide-inner">
+          <div class="slide-content"></div>
+        </div>
+      </section>
+    </template>
+
+    <script src="day3.js"></script>
+  </body>
+</html>
