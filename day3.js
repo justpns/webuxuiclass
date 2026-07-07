@@ -729,38 +729,6 @@ Explain this HTML/CSS issue simply and show the corrected version.`
     ]
   },
   {
-    type: "cards",
-    section: "Reflection",
-    eyebrow: "Teaching Rhythm",
-    title: "The workshop rhythm should stay simple and visible",
-    cards: [
-      ["Explain briefly", "Keep theory light at the start of each block."],
-      ["Build quickly", "Move to action before attention drops."],
-      ["See the result", "Students should get a visible outcome fast."],
-      ["Celebrate progress", "Acknowledge each win so confidence compounds."],
-      ["Improve slightly", "Refine one layer at a time instead of jumping to full complexity."],
-      ["Repeat", "Momentum matters more than one perfect explanation."]
-    ]
-  },
-  {
-    type: "cards",
-    section: "Reflection",
-    eyebrow: "What Matters",
-    title: "Students are not only learning tools",
-    cards: [
-      ["Not just HTML and CSS", "They are learning how implementation choices affect structure, hierarchy, and clarity."],
-      ["Not just GitHub", "They are learning how publishing and documentation support real creative work."],
-      ["Not just AI prompting", "They are learning AI-native workflow, structured collaboration, and critique-driven iteration."]
-    ]
-  },
-  {
-    type: "quote",
-    section: "Reflection",
-    eyebrow: "Instructor Role",
-    title: "The instructor is not just a coding teacher.",
-    copy: "The role is creative director, AI workflow coach, production lead, systems thinker, and confidence builder."
-  },
-  {
     type: "quote",
     section: "Reflection",
     eyebrow: "Final Reflection",
